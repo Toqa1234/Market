@@ -1,0 +1,219 @@
+.container{
+    margin: auto;
+    background-color:#E6E9F0;
+    display: grid;
+    grid-template-rows:70px 120px 150px 120px 150px;
+    grid-template-columns:repeat(4 , 1fr);
+    grid-template-areas: 
+    "head head head head"
+    "category store cont cont"
+    "category store cont cont"
+    "category store2 cont2 foot"
+    "category store2 cont2 foot";
+    grid-column-gap: 60px;
+    grid-row-gap: 20px;
+}
+.box{
+    position: relative;
+    background-color: #ffffff;
+    border-radius:20px ;  
+}
+.box1{
+    grid-area: head;
+    border-radius:0px ;
+    background-color: #1F43C3;
+    width: 100vw;
+    margin: auto;
+}
+.box1 h1{
+    color: #ffffff;
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+.box img{
+    border-radius: 20px;
+    position: absolute;
+    left: 16px;
+   
+}
+.box2{
+    grid-area: category;
+    height:460px ;
+    margin-left:10px ;
+    padding:10px ;
+    box-shadow: 3px 3px 9px gray ;
+}
+.check , h2 {
+    padding-left: 10px;
+   }
+.box2 h2 {
+    color: #000000;
+    text-align: left;
+    font-weight: bolder;
+    font-family:cursive;
+    padding-bottom: auto;
+    margin: 5px 0px;
+    padding-left: 10px;
+    font-size:30px ;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price p{
+    margin-bottom: 0px;
+    font-weight: lighter;
+    font-size: 12px;
+}
+input[type="range"]{
+    width: 100%;
+}
+label{
+    font-family:cursive;
+}
+
+.box3{
+    grid-area: store;
+    position: relative;
+    border-top: #ffffff solid 10px;
+    box-shadow: 3px 3px 9px gray ;
+ }
+
+
+.box4{
+    grid-area: cont ;
+    border-top: #ffffff solid 10px;
+    box-shadow: 3px 3px 9px gray ;
+    margin-right:10px ;
+}
+.box4 img{
+    border-radius: 20px;
+    left: 10px;
+}
+span{
+    position: absolute;
+    background-color: rgb(12, 149, 12);
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    width: 50px;
+    left: 210px;
+    top:7px ;
+    
+}
+
+ .box4 span{
+    position: absolute;
+    background-color: rgb(12, 149, 12);;
+    color: #ffffff;
+    text-align: center;
+    left: 260px;
+    top: 7px;
+    border-radius: 20px;
+   
+}
+
+.box6{
+    grid-area: foot;
+    border-top: #ffffff solid 10px;
+    box-shadow: 3px 3px 9px gray ;
+    margin-right:10px ;
+}
+.box6 img{
+left: 12px;
+
+}
+.box7{
+    grid-area: cont2;
+
+    border-top: #ffffff solid 10px;
+    box-shadow: 3px 3px 9px gray ;
+}
+.box8{
+    grid-area: store2;
+    border-top: #ffffff solid 10px;
+    box-shadow: 3px 3px 9px gray ;
+}
+.lorem{
+   position: absolute;
+   bottom: 5px;
+   margin: 0px;
+   padding-left: 20px;
+   line-height: 5px;
+   font-family: cursive;
+}
+.lorem p{
+    color: rgb(88, 87, 87);
+    font-weight: 100px;
+}
+.box4 h4{
+       color: #ffffff;
+       background-color:rgb(220, 0, 44);
+       position: absolute;
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       width:130px ;
+       height:20px ;
+       right: 10px;
+       border-radius: 5px;
+       top:2px;
+       margin: 0%;
+}
+.lorem44{
+    padding-left:10px ;
+    padding-top:10px ;
+    width: 45%;
+    position: absolute;
+    left: 330px;
+   
+}
+.lorem44 p{
+    margin-top:0 ;
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing:2px;
+}
+.lorem44 h3{
+    margin:5px 0px;
+    font-size: 26px;
+    padding-top:5px;
+    font-weight:bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.off h2{
+    display: inline-block;
+    margin-top:3px ;
+    margin-bottom:8px ;
+    
+}
+.off p{
+    display: inline-block;
+    font-size: 28px;
+    font-weight :900;
+    color: red;
+    margin-bottom:8px ;
+}
+.off{
+    padding-top: 3px;
+    line-height: 3px;
+}
+button{
+    margin: 5px;
+    width:95%;
+    background-color:#1F43C3;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 28px;
+    border-radius: 5px;
+    border: 0px;
+
+}
+.buttons{
+    line-height: 3px;
+}
+.add{
+    background-color: rgb(12, 149, 12);
+    height:30px ;
+
+}
